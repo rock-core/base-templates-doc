@@ -1,5 +1,7 @@
 module Webgen::Tag
+    if !defined?(Menu::APPLIED_EXTENDED_MENU_MONKEY_PATCH)
     class Menu
+        APPLIED_EXTENDED_MENU_MONKEY_PATCH = true
         alias __specific_menu_tree_for__ specific_menu_tree_for
 
         def specific_menu_tree_for(content_node)
@@ -20,6 +22,7 @@ module Webgen::Tag
             end
             tree
         end
+    end
     end
 end
 
