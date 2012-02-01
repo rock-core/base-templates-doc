@@ -84,11 +84,11 @@
 
       <div class="leftnav">
         <div class="nav3">
-          {menu: {start_level: 1, max_levels: 2, show_current_subtree_only: true, nested: true, used_nodes: files, range_start: 0, range_end: -1}}
+          {menu: {max_levels: 2, show_current_subtree_only: true, nested: true, used_nodes: files}}
         </div>
       </div>
 
-      <div class="content2" <% if page_is_root %>style="margin-left: 110px;"<% end %>>
+      <div class="content2">
           <% if context.node.node_info[:page].meta_info.has_key?('page_title') %>
           <div class="content2-pagetitle"><%= context.node.node_info[:page].meta_info['page_title'] %></div>
           <% else %>
