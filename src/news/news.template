@@ -1,5 +1,0 @@
-<% if context.node.node_info[:page].blocks.has_key?('news_item') %>
-<webgen:block name="news_item" />
-<% else %>
-<webgen:block name="content" />
-<% end %>
