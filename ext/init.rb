@@ -18,6 +18,5 @@ $LOAD_PATH.unshift File.expand_path('..', File.dirname(__FILE__))
 require 'ext/rdoc_links'
 require 'ext/previous_next'
 require 'ext/extended_menu'
+require 'ext/rock_links'
 
-require 'ext/blog.rb'; Blog.init
-require 'ext/ticker.rb'; Ticker.init
