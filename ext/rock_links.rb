@@ -32,7 +32,7 @@ class RockTicket
 
     def call(tag, body, context)
         ticket_id = param('rockticket.ticket_id')
-        "http://rock.opendfki.de/ticket/#{id}"
+        "http://rock.opendfki.de/ticket/#{ticket_id}"
     end
 end
 
