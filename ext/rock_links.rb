@@ -51,6 +51,7 @@ class RockSource
             url << parts.shift
         end
         url << "blobs" << "master"
+        url.concat(parts)
         "http://gitorious.org/#{url.join("/")}"
     end
 end
