@@ -1,0 +1,13 @@
+news:
+    url: http://rock-robotics.org/news
+pkg:
+    url: http://rock-robotics.org/pkg
+sets:
+    url: http://rock-robotics.org/sets
+types:
+    url: http://rock-robotics.org/types
+tasks:
+    url: http://rock-robotics.org/tasks
+documentation:
+    url: http://rock-robotics.org/documentation
+
