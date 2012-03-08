@@ -56,6 +56,15 @@ class RockSource
     end
 end
 
+class RockAPI
+    include Webgen::Tag::Base
+
+    def call(tag, body, context)
+        pkg_name = param('rockapi.pkg_name')
+        "/api/#{pkg_name}"
+    end
+end
+
 config = Webgen::WebsiteAccess.website.config
 config.rocktype.name nil, :mandatory => 'default'
 config['contentprocessor.tags.map']['rock_type'] = 'RockType'
@@ -67,4 +76,6 @@ config.rockticket.ticket_id 0, :mandatory => 'default'
 config['contentprocessor.tags.map']['rock_ticket'] = 'RockTicket'
 config.rocksource.url nil, :mandatory => 'default'
 config['contentprocessor.tags.map']['rock_source'] = 'RockSource'
+config.rockapi.pkg_name nil, :mandatory => 'default'
+config['contentprocessor.tags.map']['rock_api'] = 'RockAPI'
 
