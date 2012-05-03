@@ -33,3 +33,6 @@ tag.breadcrumbtrail.start_level: 1
 tag.coderay.line_numbers: false
 tag.coderay.lang: ruby
 
+contentprocessor.kramdown.options:
+    :entity_output: :symbolic
+
