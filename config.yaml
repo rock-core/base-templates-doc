@@ -35,4 +35,5 @@ tag.coderay.lang: ruby
 
 contentprocessor.kramdown.options:
     :entity_output: :symbolic
+    :coderay_line_numbers: ~
 
